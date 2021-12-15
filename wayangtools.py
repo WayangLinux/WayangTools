@@ -1,7 +1,14 @@
 #!/usr/bin/env python2.7
 #
 #  
-
+#  
+#       
+#       
+#       
+#      
+#      
+#      
+#              
 
 import sys
 import argparse
@@ -36,7 +43,27 @@ os.system('clear')
 
 def menu():
     print ("""
-""")
+MIT License
+
+Copyright (c) 2021 Wayang Linux
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.""")
 
 
 os.system('clear')
@@ -54,55 +81,30 @@ no = set(['no', 'n'])
 
 
 def logo():
-    print """                                  
-                     `:oyhdddhyo:`      
-                   .yMMMMMMMMMMMMMy-    
-                  -NMMMMmhysydMMMMMMo   
-                  oMMMM/      .hMMMMM+  
-                   /so-        `MMMMMN` 
-         -oys+-..--.           .MMMMMM: 
-      `+md/`+hNMMMMMMdo`     `+NMMMMMM/ 
-     +NM+`sNMMMMMMMMMMMd /hdNMMMNdMMMM: 
-    sMMo dMMMMMMMMMMMMMN +MMMMNs/MMMMN` 
-   .MMMyoMMMMN: `/dMMMN/ shs+:.sMMMMM/  
-   +MMMMMMMMMd:hh- `-.     ./yMMMMMN/   
-   hMMMMMMMMMMMMMy   osyhdNMMMMMMMy.    
-  -MMNhoyNMMMMMMMN/``dMMMMMMMMMmo.      
-  sMm:+dMNooMMMMMNdh  /hMMMho:`         
-  NMMNNhy/ hMMMMMh/-`   `:ohmhs+:.      
- .MMyMm+ssdMMMms++oydmy/.    .:+shh`    
- :N/ . `osso:`       `:ohmy+:.          
-                          -+shh`        
-                                        
+    print """
+                      - Powered by_              __ _____      
+/  |            / _|____ |     
+`| | _   _  ___| |_    / /_ __ 
+ | || | | |/ __|  _|   \ \ '__|
+_| || |_| | (__| | .___/ / |   
+\___/\__,_|\___|_| \____/|_|   
 """
+
 
 wayanglogo = """\033[0m
   
-                                        
-                     `:oyhdddhyo:`      
-                   .yMMMMMMMMMMMMMy-    
-                  -NMMMMmhysydMMMMMMo   
-                  oMMMM/      .hMMMMM+  
-                   /so-        `MMMMMN` 
-         -oys+-..--.           .MMMMMM: 
-      `+md/`+hNMMMMMMdo`     `+NMMMMMM/ 
-     +NM+`sNMMMMMMMMMMMd /hdNMMMNdMMMM: 
-    sMMo dMMMMMMMMMMMMMN +MMMMNs/MMMMN` 
-   .MMMyoMMMMN: `/dMMMN/ shs+:.sMMMMM/  
-   +MMMMMMMMMd:hh- `-.     ./yMMMMMN/   
-   hMMMMMMMMMMMMMy   osyhdNMMMMMMMy.    
-  -MMNhoyNMMMMMMMN/``dMMMMMMMMMmo.      
-  sMm:+dMNooMMMMMNdh  /hMMMho:`         
-  NMMNNhy/ hMMMMMh/-`   `:ohmhs+:.      
- .MMyMm+ssdMMMms++oydmy/.    .:+shh`    
- :N/ . `osso:`       `:ohmy+:.          
-                          -+shh`        
-                                        
-
+    ______  ___  ______ _   __  ___  _________  ____   __
+    |  _  \/ _ \ | ___ \ | / / / _ \ | ___ \  \/  \ \ / /
+    | | | / /_\ \| |_/ / |/ / / /_\ \| |_/ / .  . |\ V / 
+    | | | |  _  ||    /|    \ |  _  ||    /| |\/| | \ /  
+    | |/ /| | | || |\ \| |\  \| | | || |\ \| |  | | | |  
+    |___/ \_| |_/\_| \_\_| \_/\_| |_/\_| \_\_|  |_/ \_/  
+                                                     
+                                                                
  \033[91m"""
 def menu():
     print (wayanglogo + """\033[1m
-   [!] Coded By Wayang Linux
+   [!] Coded By Wayang Linux [!]
 \033[0m
    {1}--Information Gathering
    {2}--Password Attacks
@@ -144,11 +146,11 @@ def menu():
         menu()
 
 
-def updateWayangTools():
+def updatewayangtools():
     print ("This Tool is Only Available for Linux and Similar Systems. ")
     choiceupdate = raw_input("Continue Y / N: ")
     if choiceupdate in yes:
-        os.system("git clone https://github.com/WayangLinuxY/WayangTools.git")
+        os.system("git clone https://github.com/WayangLinux/WayangTools.git")
         os.system("cd WayangTools && sudo bash ./update.sh")
         os.system("wayangtools")
 
@@ -855,7 +857,7 @@ def passwd():
         fb()
     else:
         menu()
-		
+        
 def bluepot():
     print("you need to have at least 1 bluetooh receiver (if you have many it will work wiht those, too). You must install / libbluetooth-dev on Ubuntu / bluez-libs-devel on Fedora/bluez-devel on openSUSE ")
     choice = raw_input("Continue ? Y / N : ")
@@ -863,20 +865,20 @@ def bluepot():
         os.system("wget https://github.com/andrewmichaelsmith/bluepot/raw/master/bin/bluepot-0.1.tar.gz && tar xfz bluepot-0.1.tar.gz && sudo java -jar bluepot/BluePot-0.1.jar")
     else:
         menu()
-	
+    
 def fluxion():
     print("fluxion is a wifi key cracker using evil twin attack..you need a wireless adoptor for this tool.")
     choice = raw_input("Continue ? Y / N : ")
     if choice in yes:
         os.system("git clone https://github.com/thehackingsage/Fluxion.git") 
-	os.system("cd Fluxion && cd install && sudo chmod +x install.sh && sudo ./install.sh")
-	os.system("cd .. && sudo chmod +x fluxion.sh && sudo ./fluxion.sh")
+    os.system("cd Fluxion && cd install && sudo chmod +x install.sh && sudo ./install.sh")
+    os.system("cd .. && sudo chmod +x fluxion.sh && sudo ./fluxion.sh")
     elif choice in no:
-	clearScr()
-	wire()
+    clearScr()
+    wire()
     else:
         menu()
-	
+    
 def wire():
     print(wayanglogo)
     print("   {1}--reaver ")
@@ -894,7 +896,7 @@ def wire():
     if choice4 == "3":
         bluepot()
     if choice4 == "4":
-	fluxion()
+    fluxion()
     elif choice4 == "99":
         menu()
     elif choice4 == "":

@@ -54,9 +54,7 @@ no = set(['no', 'n'])
 
 
 def logo():
-    print """
-                      - Powered by_                   
-                                        
+    print """                                  
                      `:oyhdddhyo:`      
                    .yMMMMMMMMMMMMMy-    
                   -NMMMMmhysydMMMMMMo   

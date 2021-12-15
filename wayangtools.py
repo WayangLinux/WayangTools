@@ -2,13 +2,10 @@
 #
 #  
 #  
-#       
-#       
-#       
-#      
-#      
-#      
-#              
+#
+#       █░█░█ ▄▀█ █▄█ ▄▀█ █▄░█ █▀▀   █▀ █▀▀ █▀▀ █░█ █▀█ █ ▀█▀ █▄█
+#       ▀▄▀▄▀ █▀█ ░█░ █▀█ █░▀█ █▄█   ▄█ ██▄ █▄▄ █▄█ █▀▄ █ ░█░ ░█░ 
+
 
 import sys
 import argparse
@@ -82,29 +79,24 @@ no = set(['no', 'n'])
 
 def logo():
     print """
-                      - Powered by_              __ _____      
-/  |            / _|____ |     
-`| | _   _  ___| |_    / /_ __ 
- | || | | |/ __|  _|   \ \ '__|
-_| || |_| | (__| | .___/ / |   
-\___/\__,_|\___|_| \____/|_|   
+                      - Powered by   
+
+█░█░█ ▄▀█ █▄█ ▄▀█ █▄░█ █▀▀   █▀ █▀▀ █▀▀ █░█ █▀█ █ ▀█▀ █▄█
+▀▄▀▄▀ █▀█ ░█░ █▀█ █░▀█ █▄█   ▄█ ██▄ █▄▄ █▄█ █▀▄ █ ░█░ ░█░ 
 """
 
 
 wayanglogo = """\033[0m
   
-    ______  ___  ______ _   __  ___  _________  ____   __
-    |  _  \/ _ \ | ___ \ | / / / _ \ | ___ \  \/  \ \ / /
-    | | | / /_\ \| |_/ / |/ / / /_\ \| |_/ / .  . |\ V / 
-    | | | |  _  ||    /|    \ |  _  ||    /| |\/| | \ /  
-    | |/ /| | | || |\ \| |\  \| | | || |\ \| |  | | | |  
-    |___/ \_| |_/\_| \_\_| \_/\_| |_/\_| \_\_|  |_/ \_/  
+ 
+█░█░█ ▄▀█ █▄█ ▄▀█ █▄░█ █▀▀   █▀ █▀▀ █▀▀ █░█ █▀█ █ ▀█▀ █▄█
+▀▄▀▄▀ █▀█ ░█░ █▀█ █░▀█ █▄█   ▄█ ██▄ █▄▄ █▄█ █▀▄ █ ░█░ ░█░   
                                                      
                                                                 
  \033[91m"""
 def menu():
     print (wayanglogo + """\033[1m
-   [!] Coded By Wayang Linux [!]
+   [!] Coded By d3codex | Wayang Linux [!]
 \033[0m
    {1}--Information Gathering
    {2}--Password Attacks
@@ -115,7 +107,7 @@ def menu():
    {7}--Web Hacking
    {8}--Private Web Hacking
    {9}--Post Exploitation
-   {0}--Update The WayangTools 
+   {0}--Update The Wayang Tools 
    {99}-Exit
  """)
     choice = raw_input("WayangTools~# ")
@@ -137,7 +129,7 @@ def menu():
     elif choice == "8":
         postexp()
     elif choice == "0":
-        updateWayangTools()
+        updatewayang()
     elif choice == "99":
         clearScr(), sys.exit()
     elif choice == "":
@@ -146,13 +138,13 @@ def menu():
         menu()
 
 
-def updatewayangtools():
+def updatewayang():
     print ("This Tool is Only Available for Linux and Similar Systems. ")
     choiceupdate = raw_input("Continue Y / N: ")
     if choiceupdate in yes:
         os.system("git clone https://github.com/WayangLinux/WayangTools.git")
         os.system("cd WayangTools && sudo bash ./update.sh")
-        os.system("wayangtools")
+        os.system("WayangTools")
 
 
 def doork():

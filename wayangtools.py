@@ -56,16 +56,50 @@ no = set(['no', 'n'])
 def logo():
     print """
                       - Powered by_                   
-
-█░█░█ ▄▀█ █▄█ ▄▀█ █▄░█ █▀▀   █▀ █▀▀ █▀▀ █░█ █▀█ █ ▀█▀ █▄█
-▀▄▀▄▀ █▀█ ░█░ █▀█ █░▀█ █▄█   ▄█ ██▄ █▄▄ █▄█ █▀▄ █ ░█░ ░█░
+                                        
+                     `:oyhdddhyo:`      
+                   .yMMMMMMMMMMMMMy-    
+                  -NMMMMmhysydMMMMMMo   
+                  oMMMM/      .hMMMMM+  
+                   /so-        `MMMMMN` 
+         -oys+-..--.           .MMMMMM: 
+      `+md/`+hNMMMMMMdo`     `+NMMMMMM/ 
+     +NM+`sNMMMMMMMMMMMd /hdNMMMNdMMMM: 
+    sMMo dMMMMMMMMMMMMMN +MMMMNs/MMMMN` 
+   .MMMyoMMMMN: `/dMMMN/ shs+:.sMMMMM/  
+   +MMMMMMMMMd:hh- `-.     ./yMMMMMN/   
+   hMMMMMMMMMMMMMy   osyhdNMMMMMMMy.    
+  -MMNhoyNMMMMMMMN/``dMMMMMMMMMmo.      
+  sMm:+dMNooMMMMMNdh  /hMMMho:`         
+  NMMNNhy/ hMMMMMh/-`   `:ohmhs+:.      
+ .MMyMm+ssdMMMms++oydmy/.    .:+shh`    
+ :N/ . `osso:`       `:ohmy+:.          
+                          -+shh`        
+                                        
 """
 
 wayanglogo = """\033[0m
   
- 
-█░█░█ ▄▀█ █▄█ ▄▀█ █▄░█ █▀▀   █▀ █▀▀ █▀▀ █░█ █▀█ █ ▀█▀ █▄█
-▀▄▀▄▀ █▀█ ░█░ █▀█ █░▀█ █▄█   ▄█ ██▄ █▄▄ █▄█ █▀▄ █ ░█░ ░█░
+                                        
+                     `:oyhdddhyo:`      
+                   .yMMMMMMMMMMMMMy-    
+                  -NMMMMmhysydMMMMMMo   
+                  oMMMM/      .hMMMMM+  
+                   /so-        `MMMMMN` 
+         -oys+-..--.           .MMMMMM: 
+      `+md/`+hNMMMMMMdo`     `+NMMMMMM/ 
+     +NM+`sNMMMMMMMMMMMd /hdNMMMNdMMMM: 
+    sMMo dMMMMMMMMMMMMMN +MMMMNs/MMMMN` 
+   .MMMyoMMMMN: `/dMMMN/ shs+:.sMMMMM/  
+   +MMMMMMMMMd:hh- `-.     ./yMMMMMN/   
+   hMMMMMMMMMMMMMy   osyhdNMMMMMMMy.    
+  -MMNhoyNMMMMMMMN/``dMMMMMMMMMmo.      
+  sMm:+dMNooMMMMMNdh  /hMMMho:`         
+  NMMNNhy/ hMMMMMh/-`   `:ohmhs+:.      
+ .MMyMm+ssdMMMms++oydmy/.    .:+shh`    
+ :N/ . `osso:`       `:ohmy+:.          
+                          -+shh`        
+                                        
 
  \033[91m"""
 def menu():

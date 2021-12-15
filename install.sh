@@ -21,7 +21,7 @@ echo -e "${GREEN}                                           -Coded By Wayang Lin
 echo ""
 echo -e "${YELLOW}  ${NC} "
 echo ""
-echo "---------------------------------------------------------------------------------------"
+echo "----------------------------------------------------------------"
 echo ""
 echo -e "${RED}[!] This Tool Must Run As ROOT [!]${NC}"
 echo ""
